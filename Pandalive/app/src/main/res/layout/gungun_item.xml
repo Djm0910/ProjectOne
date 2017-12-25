@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/Img_gun"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x200"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title_gun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@+id/Img_gun"
+        android:text="ssss"
+        android:textSize="@dimen/x30" />
+
+    <TextView
+        android:id="@+id/time_gun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Img_gun"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_toRightOf="@+id/Img_gun"
+        android:text="aaaa"
+        android:textSize="@dimen/x20" />
+
+
+</RelativeLayout>

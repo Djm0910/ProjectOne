@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/x10"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/FuYong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/FY_img"
+            android:layout_width="@dimen/x240"
+            android:layout_height="@dimen/x160"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/FY_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="我是"
+            android:textSize="@dimen/x30"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/FY_img"
+            android:layout_toEndOf="@+id/FY_img"
+            android:layout_marginStart="19dp" />
+
+        <TextView
+            android:id="@+id/FY_xiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你是"
+            android:textSize="@dimen/x25"
+            android:layout_alignBottom="@+id/FY_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/FY_title"
+            android:layout_alignStart="@+id/FY_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/FuYong"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x30"
+            android:background="@drawable/lpanda_bottom_gra"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/FY"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:background="@drawable/ic_playvideo" />
+
+        <TextView
+            android:id="@+id/FY_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ssss"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

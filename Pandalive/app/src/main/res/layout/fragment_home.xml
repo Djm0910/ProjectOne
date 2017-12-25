@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EBEF"
+    android:orientation="vertical">
+
+    <com.androidkun.PullToRefreshRecyclerView
+        android:id="@+id/Recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/x5"></com.androidkun.PullToRefreshRecyclerView>
+
+</RelativeLayout>

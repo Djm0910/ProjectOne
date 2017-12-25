@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 当我鼠标按下的时候 -->
+    <item android:state_pressed="true" android:drawable="@drawable/tab_panda_live_pressed"/>
+    <!-- 当鼠标选中的时候 -->
+    <item android:state_checked="true" android:drawable="@drawable/tab_panda_live_pressed"/>
+    <!-- 当鼠标获取到焦点 -->
+    <item android:state_focused="true" android:drawable="@drawable/tab_panda_live_pressed"/>
+    <item android:drawable="@drawable/tab_panda_live_normal"/>
+</selector>

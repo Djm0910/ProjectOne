@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/x10"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/obse_img"
+            android:layout_width="@dimen/x240"
+            android:layout_height="@dimen/x160"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/obse_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_toRightOf="@+id/obse_img"
+            android:text="我是"
+            android:textSize="@dimen/x30" />
+
+        <TextView
+            android:id="@+id/obse_xiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/obse_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/obse_title"
+            android:layout_below="@+id/obse_title"
+            android:layout_marginTop="19dp"
+            android:text="你是"
+            android:textSize="@dimen/x25" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/One"
+        android:layout_marginBottom="@dimen/x10">
+
+        <TextView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x30"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lpanda_bottom_gra" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:background="@drawable/ic_playvideo" />
+
+        <TextView
+            android:id="@+id/Time_obse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/textView"
+            android:text="ssss" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
