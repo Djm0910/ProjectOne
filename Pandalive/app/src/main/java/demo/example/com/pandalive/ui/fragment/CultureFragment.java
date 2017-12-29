@@ -1,9 +1,7 @@
 package demo.example.com.pandalive.ui.fragment;
 
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.View;
 
 import com.google.gson.Gson;

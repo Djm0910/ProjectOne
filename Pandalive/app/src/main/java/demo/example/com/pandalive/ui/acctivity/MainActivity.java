@@ -1,11 +1,7 @@
 package demo.example.com.pandalive.ui.acctivity;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.annotation.IdRes;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -14,8 +10,8 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 
-import java.util.List;
-
+import demo.example.com.pandalive.ui.acctivity.Button1.Interaction;
+import demo.example.com.pandalive.ui.acctivity.Button2.Login;
 import demo.example.com.pandalive.R;
 import demo.example.com.pandalive.app.App;
 import demo.example.com.pandalive.base.BaseActivity;
@@ -30,9 +26,7 @@ import demo.example.com.pandalive.ui.fragment.LiveFragment;
 import demo.example.com.pandalive.ui.fragment.ObservationFragment;
 import demo.example.com.pandalive.utils.FragmentBuilder;
 
-import static demo.example.com.pandalive.R.id.view;
-
-public class MainActivity extends BaseActivity<NetPresenter, NetModel> implements NetContract.View {
+public class MainActivity extends BaseActivity<NetPresenter, NetModel> implements NetContract.View,View.OnClickListener {
     private RadioGroup mRg;
     private RadioButton mOne, mTwo, mThree, mFour, mFive;
     private MyTitle myTitle;
@@ -49,6 +43,8 @@ public class MainActivity extends BaseActivity<NetPresenter, NetModel> implement
     @Override
     protected void initView() {
         setContentView(R.layout.activity_main);
+        App.mActivity.mHuDong.setOnClickListener(this);
+        App.mActivity.mLoain.setOnClickListener(this);
         mOne = (RadioButton) findViewById(R.id.One);
         mTwo = (RadioButton) findViewById(R.id.Two);
         mThree = (RadioButton) findViewById(R.id.Three);
@@ -132,4 +128,19 @@ public class MainActivity extends BaseActivity<NetPresenter, NetModel> implement
             System.exit(0);
         }
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.hudongImage:
+                startActivity(new Intent(MainActivity.this, Interaction.class));
+                break;
+            case R.id.ImageDengLu:
+                startActivity(new Intent(MainActivity.this, Login.class));
+                break;
+        }
+    }
+
+
+
 }

@@ -26,7 +26,7 @@ public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel>
     public M mModel;
     private FrameLayout frameLayout;
     public TextView title;
-    public ImageView mLoain,mHuDong,mPanda;
+    public ImageView mLoain, mHuDong, mPanda;
 
 
     @Override
@@ -59,8 +59,6 @@ public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel>
     protected abstract void initView();
 
 
-
-
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         View view = LayoutInflater.from(BaseActivity.this).inflate(layoutResID, null);
@@ -78,6 +76,10 @@ public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel>
         super.setContentView(view, params);
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        App.mActivity = this;
+    }
 }
 

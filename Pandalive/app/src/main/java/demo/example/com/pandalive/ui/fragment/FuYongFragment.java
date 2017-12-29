@@ -38,7 +38,6 @@ public class FuYongFragment extends BaseFragment<NetPresenter, NetModel> impleme
         switch (type) {
             case HAHA:
                 if (ss != null) {
-                    Log.e("2", "kankan");
                     Gson gson = new Gson();
                     FuYong fuYong = gson.fromJson(ss, FuYong.class);
                     List<FuYong.VideoBean> video = fuYong.getVideo();
@@ -59,7 +58,6 @@ public class FuYongFragment extends BaseFragment<NetPresenter, NetModel> impleme
 
     @Override
     protected void initView(View view) {
-        Log.e("4", "ssss");
         mRecy = view.findViewById(R.id.Recy_Fu);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
